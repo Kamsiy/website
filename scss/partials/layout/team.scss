@@ -1,0 +1,77 @@
+
+#officers{
+  padding: 50px 50px;
+  h2{
+    font: $main-font;
+    font-weight: 400;
+    &:last-of-type{
+      padding-top: 50px;
+    }
+  }
+  .box{
+    display: inline-block;
+    background: $white;
+    padding: 20px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.1);
+    -moz-box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.1);
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.1);
+
+    img{
+      margin-bottom: 10px;
+    }
+    span{
+      display: block;
+    }
+    .name{
+      font-weight: 800;
+      font-size: 0.87em;
+      line-height: 1.2;
+    }
+    .position{
+      font-family: $code-font;
+      font-size: 0.7em;
+    }
+  }
+  @media screen and (max-width:$screen-sm){
+    padding: 50px 10px;
+    .inner-box{
+      img{
+        width: 30% !important;
+      }
+      .info{
+        width: 70% !important;
+      }
+    }
+  }
+  @media screen and (max-width:$screen-md) {
+    .box{
+      -webkit-box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.1);
+      -moz-box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.1);
+      box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.1);
+    }
+    .inner-box{
+      overflow: hidden;
+      text-align: left;
+      img{
+        width: 20%;
+        float: left;
+        border-radius: 100%;
+      }
+      .info{
+        padding: 20px;
+        float: right;
+        width: 80%;
+
+        .name{
+          font-size: 0.8em;
+          line-height: 1.2;
+        }
+        .position{
+          margin-top: 0.2em;
+          font-size: 0.62em;
+        }
+      }
+    }
+  }
+}

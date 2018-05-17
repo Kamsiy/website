@@ -1,0 +1,77 @@
+html{
+  height: 100%;
+}
+body {
+  font-family: $main-font;
+  font-size: 20px;
+  color: $black;
+  z-index: -10;
+  height: 100%;
+}
+
+h1,h2,h3,h4,h5 {
+  font-weight: 700;
+  margin: 0;
+  font-family: $main-font;
+}
+
+h2 {
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+
+h3 {
+  font-family: $code-font;
+  color: $yellow;
+  margin-bottom: 40px;
+}
+
+img {
+  width: 100%;
+}
+
+input[type="text"], input[type="email"]{
+  padding-left: 20px;
+  border: 1px solid $black;
+  width: 100%;
+  margin-bottom: 10px;
+  font-family: $code-font;
+}
+
+section {
+  padding: 100px 0;
+  text-align: center;
+  &:nth-of-type(odd){
+    background-color: $yellow;
+    h2{
+      color: $red;
+    }
+  }
+  &:nth-of-type(even){
+    background-color: $red;
+    h2{
+      color: $yellow;
+    }
+  }
+}
+
+.row {
+  margin: 0;
+}
+
+.round {
+  border-radius: 10px;
+}
+
+.block {
+  display: block;
+}
+@media screen and (max-width:$screen-sm) {
+  body{
+    font-size: 18px;
+  }
+  #sponsors img{
+    width: 50%;
+    margin-bottom: 50px;
+  }
+}

@@ -1,0 +1,48 @@
+#join {
+  padding-top: 50px;
+  padding-bottom: 0;
+
+  h2 {
+    padding-bottom: 0;
+  }
+  h3{
+    font-family: $main-font;
+    color: $yellow;
+    margin-bottom: 40px;
+  }
+  i {
+    padding-right: 10px;
+  }
+  #meeting{
+    background-color: $darkred;
+    padding: 80px;
+
+    h4 {
+      font-family: $main-font;
+      margin-bottom: 30px;
+      font-size: 20px;
+    }
+  }
+  #signup {
+    background-color: $yellow;
+    padding: 80px;
+
+    h3 {
+      color: $darkred;
+    }
+  }
+  @media screen and (max-width:$screen-sm){
+    #meeting{
+      padding: 80px 20px;
+      h3{
+        font-size: 1.2em;
+      }
+      h4{
+        font-size: 0.9em;
+      }
+    }
+    #signup{
+      padding: 80px 30px;
+    }
+  }
+}

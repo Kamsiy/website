@@ -1,0 +1,26 @@
+$berry: #952029;
+$darkberry: #551218;
+$pink: #E2303F;
+#projects {
+  z-index: 2;
+  p {
+    margin-bottom: 30px;
+    z-index: 1;
+  }
+  .box {
+    padding: 30px;
+    background: $berry;
+    border: 2px solid $darkberry;
+    margin-bottom: 20px;
+    z-index: 5;
+
+    &:hover{
+      background: $pink;
+      cursor: pointer;
+      font-family: $main-font;
+      h4{
+        font-family: inherit;
+      }
+    }
+  }
+}
