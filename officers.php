@@ -1,6 +1,6 @@
 <?php
-  require_once('private/initialize.php');
-  $str = file_get_contents(PUBLIC_PATH . "/team.json");
+  require_once('init/initialize.php');
+  $str = file_get_contents(PUBLIC_PATH . "/data/team.json");
   $json = json_decode($str, true);
   $pageTitle = "OFFICERS";
 ?>

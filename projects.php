@@ -1,5 +1,5 @@
 <?php
-    require_once('private/initialize.php');
+    require_once('init/initialize.php');
     $pageTitle = "PROJECTS";
     ?>
 <!DOCTYPE html>

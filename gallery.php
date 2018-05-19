@@ -1,6 +1,6 @@
 <?php
-  require_once('private/initialize.php');
-  $pageTitle = "GALLORY";
+  require_once('init/initialize.php');
+  $pageTitle = "GALLERY";
 ?>
 <!DOCTYPE html>
 <html>

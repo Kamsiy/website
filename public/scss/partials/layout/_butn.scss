@@ -1,0 +1,31 @@
+%butn {
+  border: 1px solid $black;
+  width: 100%;
+  background: $darkred;
+  color: $yellow;
+  font-family: inherit;
+  margin-bottom: 10px;
+}
+
+.btn-loud {
+  @extend %butn;
+  background-color: $darkred;
+  color: $yellow;
+
+  &:hover {
+    background-color: $red;
+    cursor: pointer;
+  }
+}
+
+.btn-dim {
+  @extend %butn;
+  background-color: $yellow;
+  color: $darkred;
+
+  &:hover {
+    background-color: $darkred;
+    color: $yellow;
+    cursor: pointer;
+  }
+}
