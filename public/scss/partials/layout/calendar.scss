@@ -1,0 +1,191 @@
+$speed: 2s;
+
+
+/* ------------------------- */
+
+section.calendar{
+  padding-top: 20px;
+  padding-bottom: 0;
+  clear: both;
+  overflow: hidden;
+  background-color: white;
+  
+  .header{
+    padding: 0 20px;
+    #month > h2{
+      display: inline-block;
+      width: 50%;
+      margin-bottom: 0;
+      @media screen and (max-width:$screen-sm){
+        font-size: 1.42em;
+        width: 70%;
+        text-align: center;
+      }
+    }
+    #prev,#next{
+      display: inline-block;
+      width: 10%;
+    }
+    #prev{
+      text-align: left;
+    }
+    #next{
+      text-align: right;
+    }
+    button{
+      background: transparent;
+      border: none;
+    }
+  }
+  .calendar-table{
+    
+    .cal-cont{
+      padding: 30px;
+
+    }
+    table{
+      width: 100%;
+      thead{
+        border-bottom: 2px solid red;
+      }
+      th{
+        padding: .75rem 0;
+      }
+      td{
+        border: 1px solid white;
+        line-height: 80px;
+        font-size: 1rem;
+        font-weight: 800;
+        @media screen and (max-width:$screen-md){
+          line-height: 65px;
+        }
+      }
+    }
+    .active{
+      background: black;
+      color:white;
+    }
+  }
+  .calendar-info{
+    background-color:#F2F2F2;
+    text-align: left;
+    padding: 20px 30px;
+    font-weight: 800;
+    @media screen and (max-width:$screen-md){
+      padding: 20px 10px;
+    }
+    .events{
+      margin-top:20px;
+    }
+    .day-info{
+      padding: 20px;
+      margin-bottom: 20px;
+      background: white;
+      .highlight{
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background: red;
+        border-radius: 50%;
+        margin-right: 10px;
+        margin-bottom: 0.06rem;
+      }
+      .time,{
+        padding-left: 25px;
+        display: block;
+        font-size: 0.65em;
+      }
+    }
+  }
+  @media screen and (min-width:$screen-md) and (max-width:$screen-xl) {
+    
+    .day-body{
+      margin: auto;
+      width: 80%;
+    }
+  }
+  @media screen and (max-width:$screen-md){
+    
+  }
+}
+#events{
+  padding-top: 200px;
+  padding-bottom: 200px;
+  height: 700px;
+  .loading {
+    display: block;
+    margin: auto;
+    position: relative;
+    width: 100px;
+    height: 100px;
+
+    span {
+      display: block;
+      position: absolute;
+      width: 50%;
+      height: 50%;
+
+      &:nth-child(1) {
+        top: 0;
+        left: 0;
+
+        background-color: rgba( #4285f4, .75 );
+
+        animation: move1 $speed linear infinite;
+      }
+      &:nth-child(2) {
+        top: 0;
+        right: 0;
+
+        background-color: rgba( #db4437, .75 );
+
+        animation: move2 $speed linear infinite;
+      }
+      &:nth-child(3) {
+        bottom: 0;
+        left: 0;
+
+        background-color: rgba( #f4b400, .75 );
+
+        animation: move3 $speed linear infinite;
+      }
+      &:nth-child(4) {
+        bottom: 0;
+        right: 0;
+
+        background-color: rgba( #0f9d58, .75 );
+
+        animation: move4 $speed linear infinite;
+      }
+    }
+  }
+
+  @keyframes move1 {
+    0%   { transform: translate( 0 ); z-index: 10; }
+    25%  { transform: translate( 100%, 0 ); }
+    50%  { transform: translate( 100%, 100% ); }
+    75%  { transform: translate( 0, 100% ); z-index: 0; }
+    100% { transform: translate( 0 ); }
+  }
+  @keyframes move2 {
+    0%   { transform: translate( 0 ); }
+    25%  { transform: translate( 0, 100% ); }
+    50%  { transform: translate( -100%, 100% ); z-index: 0; }
+    75%  { transform: translate( -100%, 0 ); z-index: 10; }
+    100% { transform: translate( 0 ); }
+  }
+  @keyframes move3 {
+    0%   { transform: translate( 0 ); }
+    25%  { transform: translate( 0, -100% ); z-index: 10; }
+    50%  { transform: translate( 100%, -100% ); }
+    75%  { transform: translate( 100%, 0 ); }
+    100% { transform: translate( 0 ); z-index: 0; }
+  }
+  @keyframes move4 {
+    0%   { transform: translate( 0 ); }
+    25%  { transform: translate( -100%, 0 ); z-index: 0; }
+    50%  { transform: translate( -100%, -100% ); z-index: 10; }
+    75%  { transform: translate( 0, -100% ); }
+    100% { transform: translate( 0 ); }
+  }
+}
