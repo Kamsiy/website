@@ -14,7 +14,10 @@
         </div>
 
         <div class="row" style="margin-bottom: 50px;" >
-            <div class="col-lg-6">  </div>
+            <div class="col-lg-6" align="right"> Major changes in the year to come encompass all aspects of our design. Mechanically, we plan to change our motors, although powerful enough, were not owned by the robotics club. We also intend to alter our drive shaft to motor connection to better accommodate torque distribution. Electrically, we intend to better regulate our battery temperature with a shell casing and incorporate sensors and reactive measures when our system changes. SICK Sensors donated a lidar, and we intend to use this to sense the world. We are intending to construct a better software architecture that incorporates a more proactive approach to our sensing and a faster reactive approach to our mechanics. Our team is currently working on these upgrades and we are excited to see where this project will be within half a year.
+                <p> </p>
+                <p style="margin-top: 100px;"> Please visit the <a href="http://www.autosnowplow.com/welcome.html">ION Snowplow Competition</a> website for more information. </p>
+            </div>
             <div class="col-sm-6"> <img src="public/img/snowplow_v3.png"> </div>
         </div>
 
