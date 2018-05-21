@@ -1,6 +1,6 @@
 <section id="projects">
-  <div class="container">
-    <h2>PROJECTS</h2>
+  
+  <!-- <div class="container">
     <p>The club is currently working on 3 seperate projects this semester</p>
     <div class="row">
       <div class="col-md-4">
@@ -19,7 +19,7 @@
           </div>
         </div>
       </div>
-  </div>
+  </div> -->
   <!-- Modals -->
   <div class="modal fade" id="exoModal" tabindex="-1" role="dialog" aria-labelledby="exoModal" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -71,5 +71,55 @@
         </div>
       </div>
     </div>
+  </div>
+
+
+  <div class="main-container">
+  <h2>PROJECTS</h2>
+    <a href="">
+      <div class="project-box">
+        <div class="img">
+          <img src="http://via.placeholder.com/1160x680" alt="">
+        </div>
+        <div class="info">
+          <span class="disabled">2018 &centerdot; Automation | Sensing</span>
+          <span class="title">SnowPlow</span>
+          <span class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Donec porta felis id dui tempor molestie. Aenean scelerisque urna ac odio condimentum, 
+            hendrerit pharetra nunc semper. Vivamus convallis non dolor at sollicitudin. Aenean neque nunc, 
+            pellentesque ac felis eget, accumsan sodales dui. Donec rhoncus</span>
+        </div>
+      </div>
+    </a>
+    <a href="">
+      <div class="project-box">
+        <div class="img">
+          <img src="http://via.placeholder.com/1160x680" alt="">
+        </div>
+        <div class="info">
+          <span class="disabled">2018 &centerdot; Automation</span>
+          <span class="title">Exosuit</span>
+          <span class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Donec porta felis id dui tempor molestie. Aenean scelerisque urna ac odio condimentum, 
+            hendrerit pharetra nunc semper. Vivamus convallis non dolor at sollicitudin. Aenean neque nunc, 
+            pellentesque ac felis eget, accumsan sodales dui. Donec rhoncus</span>
+        </div>
+      </div>
+    </a>
+    <a href="">
+      <div class="project-box">
+        <div class="img">
+          <img src="http://via.placeholder.com/1160x680" alt="">
+        </div>
+        <div class="info">
+          <span class="disabled">2018 &centerdot; Automation</span>
+          <span class="title">BattleBots</span>
+          <span class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Donec porta felis id dui tempor molestie. Aenean scelerisque urna ac odio condimentum, 
+            hendrerit pharetra nunc semper. Vivamus convallis non dolor at sollicitudin. Aenean neque nunc, 
+            pellentesque ac felis eget, accumsan sodales dui. Donec rhoncus</span>
+        </div>
+      </div>
+    </a> 
   </div>
 </section>

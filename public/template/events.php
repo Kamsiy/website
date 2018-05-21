@@ -85,7 +85,7 @@
 
   <div class="calendar-info right">
     <div class="container">
-      <span class="">Events</span>
+      <span class="log">Events</span>
       <div class="events">
         <div class="day-info">
           <span class="highlight"></span>
