@@ -70,12 +70,27 @@ section.calendar{
     background-color:#F2F2F2;
     text-align: left;
     padding: 20px 30px;
-    font-weight: 800;
+
+    .title{
+      font-weight: 800;
+    }
     @media screen and (max-width:$screen-md){
       padding: 20px 10px;
     }
     .events{
       margin-top:20px;
+    }
+    .log{
+      font-size: 40px;
+      line-height: 1.2;
+      font-weight: 400;
+      @media screen and (max-width:$screen-sm){
+        font-size: 28px;
+      }
+
+      @media screen and (max-width:$screen-lg){
+        font-size: 38px;
+      }
     }
     .day-info{
       padding: 20px;
@@ -111,7 +126,7 @@ section.calendar{
 #events{
   padding-top: 200px;
   padding-bottom: 200px;
-  height: 700px;
+  height: 700px;x
   .loading {
     display: block;
     margin: auto;
