@@ -10,6 +10,7 @@
     <main>
       <?php
         include(TEMPLATE_PATH . '/header.php');
+        include(CONTENT_PATH . '/gallery_2017_2018.php');
         include(TEMPLATE_PATH . '/footer.php');
        ?>
     </main>
