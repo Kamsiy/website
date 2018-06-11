@@ -1,19 +1,69 @@
 #nav {
   background-color: $white;
   font-size: .73em;
-
+  .navbar{
+    padding: 0 1rem;
+  }
+  .navbar-light .navbar-toggler{
+    border: none;
+    &:focus{
+      outline:0;
+    }
+  }
   .navbar-nav {
-    .active a{
-      color: $yellow;
-      background-color: $red;
+    /* Navigation */
+    
+    .active a, a.active{
+      color: black;
+      border-bottom: 2px solid $red;
     }
     a {
       display: block;
       padding: 10px 15px;
       text-decoration: none;
       color: $black;
-      font-weight: 700;
+      font-weight: 400;
       font-family: $main-font;
+      color: #8b939b;
+      margin-bottom: -10px;
+      padding: 20px 0 26px;
+      margin-left: 32px;
+      text-decoration: none;
+      display: inline-block;
+      @media (max-width:$screen-md) {
+        &{
+          padding: 10px 0;
+          padding-top: 30px;
+        }
+      }
+      
+    }
+
+    /* Projects navigation */
+    
+      
+    .dropdown{
+      position: relative;
+      margin: 0 auto;
+      display: inline-block;
+      .projects-content{
+        // text-align: left;
+        display: none;
+        position: absolute;
+        width: 160px;
+        padding: 10px 0;
+        z-index: 1; 
+        background: white;
+        @media (min-width: $screen-md) {
+          &{
+            text-align: left;
+          }
+        }
+      }
+      &:hover .projects-content{
+        display: block;
+      }
     }
   }
+
 }

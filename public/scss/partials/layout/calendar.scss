@@ -4,15 +4,18 @@ $speed: 2s;
 /* ------------------------- */
 
 section.calendar{
-  padding-top: 20px;
+  padding-top: 120px;
   padding-bottom: 0;
   clear: both;
   overflow: hidden;
   background-color: white;
+  .cal-cont{
+    width: 80%;
+  }
   
   .header{
     padding: 0 20px;
-    #month > h2{
+    h2{
       display: inline-block;
       width: 50%;
       margin-bottom: 0;
@@ -27,10 +30,16 @@ section.calendar{
       width: 10%;
     }
     #prev{
-      text-align: left;
+      text-align: right;
+      @media (max-width:$screen-sm){
+        text-align: left;
+      }
     }
     #next{
-      text-align: right;
+      text-align: left;
+      @media (max-width:$screen-sm){
+        text-align: right;
+      }
     }
     button{
       background: transparent;
@@ -40,7 +49,9 @@ section.calendar{
   .calendar-table{
     
     .cal-cont{
-      padding: 30px;
+      max-width: 700px;
+      padding: 30px 0;
+      margin: 0 auto;
 
     }
     table{
@@ -54,8 +65,6 @@ section.calendar{
       td{
         border: 1px solid white;
         line-height: 80px;
-        font-size: 1rem;
-        font-weight: 800;
         @media screen and (max-width:$screen-md){
           line-height: 65px;
         }
@@ -123,10 +132,7 @@ section.calendar{
     
   }
 }
-#events{
-  padding-top: 200px;
-  padding-bottom: 200px;
-  height: 700px;x
+.none{
   .loading {
     display: block;
     margin: auto;

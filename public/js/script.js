@@ -1,6 +1,6 @@
 $(document).ready(function(){
     var date = new Date();
-    var month = $("#month").children("h2");
+    var month = $("#month")
     var months = {0:["January", 31], 1:["Febuary",31], 2:["March",31], 3:["April",30], 4:["May", 31], 
         5:["June", 30], 6:["July", 31], 7:["August", 31], 8:["September", 30], 9:["October", 31], 
         10:["November", 30], 11:["December", 31]
@@ -22,7 +22,6 @@ $(document).ready(function(){
         var m = new Date(date.getFullYear(), currentMonth, 1);
         var firstday = m.getDay();
         var lastday = months[currentMonth][1];
-        console.log(firstday, lastday);
         $("#num").html(gridify(firstday, lastday, currentMonth));
     }
     /*
@@ -40,7 +39,6 @@ $(document).ready(function(){
                     if(month == date.getMonth() && dayNumber == date.getDate()){
                         // Set current day
                         grid += "<td class = \"active\">" + dayNumber + "</td>"; 
-                        console.log(dayNumber);
                         n++;
                         days++;
                         continue;

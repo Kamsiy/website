@@ -3,7 +3,7 @@
   $pageTitle = "ALUMNI";
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head><?php include(TEMPLATE_PATH . '/head.php'); ?></head>
   <body>
 

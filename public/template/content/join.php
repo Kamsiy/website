@@ -3,11 +3,15 @@
     <div class="row">
       <div class="col-md-6 text-center" id="meeting">
         <h3>General Meetings</h3>
+        <div>
         <h4><i class="fa fa-calendar"></i>Most Thursdays</h4>
 
         <h4><i class="fa fa-clock-o"></i>6pm</h4>
 
         <h4><i class="fa fa-map-marker"></i>Carver 0201</h4>
+
+        </div>
+        
       </div>
       <div class="col-md-6 text-left" id="signup">
         <h3>Sign Up</h3>

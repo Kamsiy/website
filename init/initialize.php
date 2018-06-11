@@ -6,7 +6,7 @@
   define('CONTENT_PATH', TEMPLATE_PATH . '/content');
   define('VIEWS_PATH', PUBLIC_PATH . '/views');
 
-  $pub = strpos($_SERVER['SCRIPT_NAME'], '/public') + 8;
+  $pub = strpos($_SERVER['SCRIPT_NAME'], '/public') + 6;
   $doc = substr($_SERVER['SCRIPT_NAME'], 0, $pub);
   define("ROOT", $doc);
 

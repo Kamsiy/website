@@ -1,25 +1,12 @@
-<!-- <section id="events">
-  <div class="soon">
-    <h2>Coming Soon</h2>
-    <p>We are currenlty working on this page. It should be ready before the start of next semester</p>
-  </div>
-  <span class="loading">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-  </span>
-</section> -->
-
 <section class="calendar">
-  <div class="calendar-table left">
+  <div class="calendar-table">
     
     <div class="header container">
-      <span id="prev"><i class="fa fa-angle-left"></i></span>
-      <span id="month"><h2></h2></span>
-      <span id="next"><i class="fa fa-angle-right"></i></span>
+      <span id="prev"><i class="icon-before"></i></span>
+      <h2 id = "month">June</h2>
+      <span id="next"><i class="icon-next"></i></span>
     </div>
-    <div class="cal-cont container">
+    <div class="cal-cont">
       <table class="">
         <thead id="days">
           <tr>
@@ -83,29 +70,29 @@
     </div>
   </div>
 
-  <div class="calendar-info right">
+  <div class="calendar-info">
     <div class="container">
       <span class="log">Events</span>
       <div class="events">
-        <div class="day-info">
+        <!-- <div class="day-info">
           <span class="highlight"></span>
           <span class="title">Meeting</span>
           <span class="time">14:00 - 6:00PM</span>
-        </div>
-        <div class="day-info">
+        </div> -->
+        <!-- <div class="day-info">
           <span class="highlight"></span>
           <span class="title">Meeting</span>
           <span class="time">14:00 - 6:00PM</span>
-        </div>
-        <div class="day-info">
-          <span class="highlight"></span>
-          <span class="title">Meeting</span>
-          <span class="time">14:00 - 6:00PM</span>
-        </div>
-        <div class="day-info">
-          <span class="highlight"></span>
-          <span class="title">Meeting</span>
-          <span class="time">14:00 - 6:00PM</span>
+        </div> -->
+
+        <div class="none">
+          <div class="loading">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </div>
     </div>

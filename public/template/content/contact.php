@@ -2,8 +2,8 @@
   <div class="overlay"></div>
   <div class="inner">
     <h2>CONTACT US</h2>
+    <p>Send us your comments, suggestions and questions, we would love to hear from you</p>
     <div class="mail">
-      <p>Send us your comments, suggestions and questions, we would love to hear from you</p>
 
         <form action="">
           <div class="mail-header">
