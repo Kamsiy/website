@@ -11,18 +11,18 @@
           </div>
           <div class="mail-body">
             <div class="row">
-              <label for="" class="col-lg-3 col-md-4 col-sm-3">Name:</label>
-              <input class="col-lg-9 col-md-8 col-sm-9"type="text" placeholder="Name">
+              <label for="contact-name" class="col-lg-3 col-md-4 col-sm-3">Name:</label>
+              <input class="col-lg-9 col-md-8 col-sm-9" type="text" id = "contact-name" placeholder="Name">
             </div>
             <div class="row">
-              <label for="" class="col-lg-3 col-md-4 col-sm-3">Email:</label>
-              <input class="col-lg-9 col-md-8 col-sm-9" type="email" placeholder="Email Address">
+              <label for="contact-email" class="col-lg-3 col-md-4 col-sm-3">Email:</label>
+              <input class="col-lg-9 col-md-8 col-sm-9" type="email" id="contact-email" placeholder="Email Address">
             </div>
             <div class="row">
-              <label for="" class="col-lg-3 col-md-4 col-sm-3">Message:</label>
-              <textarea class="col-lg-9 col-md-8 col-sm-9"  rows="8" placeholder="Message"></textarea>
+              <label for="contact-message" class="col-lg-3 col-md-4 col-sm-3">Message:</label>
+              <textarea class="col-lg-9 col-md-8 col-sm-9" id="contact-message"  rows="8" placeholder="Message"></textarea>
             </div>
-            <input type="submit" name="" value="SEND" class="btn-loud">
+            <input type="submit" value="SEND" class="btn-loud">
           </div>
         </form>
     </div>

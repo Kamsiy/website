@@ -16,6 +16,12 @@
   #meeting{
     background-color: $darkred;
     padding: 80px;
+    @media (min-width: $screen-xl){
+      .content{
+        right: 100px;
+        position: absolute;
+      }
+    }
 
     h4 {
       font-family: $main-font;
@@ -29,6 +35,9 @@
 
     h3 {
       color: $darkred;
+    }
+    form{
+      max-width: 600px;
     }
   }
   @media screen and (max-width:$screen-sm){

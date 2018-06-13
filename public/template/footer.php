@@ -1,5 +1,5 @@
 <footer>
-    <div class="row container">
+    <div class="container">
       <div >
         <a href="https://www.facebook.com/ISURobotics/" class="footer-link">Facebook</a> |
         <a href="https://github.com/ISURobotics" class="footer-link">Github</a>
