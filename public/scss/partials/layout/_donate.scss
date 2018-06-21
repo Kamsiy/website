@@ -1,0 +1,89 @@
+#donate{
+  font-size: 16px;
+  font-family: $main-font;
+  text-align: left;
+  padding: 120px 0px;
+  // background-color: #E0E0E0; 
+  padding: left;
+  h1{
+    color: $red;
+    margin-bottom: 10px;
+  }
+}
+.main-container{
+  // padding: 0;
+  text-align: center;
+  max-width: 1200px;
+}
+.row{
+  .empty{
+    display: none;
+  }
+  span{
+    display: block;
+  }
+  .flex-card{
+    color: #333;
+    background: white;
+    border: 2px solid $yellow;
+    @media (min-width: $screen-md) {
+      height: 360px;
+      .empty{
+        display: block;
+        height: 40px;
+      }
+      
+    }
+    margin-bottom: 10px;
+    padding: 0;
+    font-family: $code-font;
+    .level{
+      padding: 10px;
+      width: 100px;
+      font-weight: 800;
+      margin: 0 auto;
+      display: block;
+      margin-top: -40px;
+      color: white; 
+      margin-bottom: 20px;
+      background-image: linear-gradient(to right bottom, #f4b646, #f19739, #eb7734, #e25536, #d52d3b);
+    }
+    .amount{
+      color: white;
+      font-size: 20px;
+      padding: 30px 0;
+      background: $red;
+      font-family: $code-font;
+    }
+    hr{
+      margin-top:0; 
+    }
+    ul{
+      margin: 0;
+      padding: 0;
+      font-family: $main-font;
+      list-style: none;
+      li{
+        border-top: 1px solid black;
+        padding: 8px 0;
+      }
+    }
+  }
+}
+
+.button{
+  margin-top: 20px;
+  display: inline-block;
+  background: $red;
+  // background-image: linear-gradient(to right bottom, #f4b646, #f19739, #eb7734, #e25536, #d52d3b);
+  color: black;
+  border: 2px solid black;
+  padding: 10px 20px;
+
+  &:hover{
+    text-decoration: none;
+    color:white;
+    background-image: linear-gradient(to right bottom, #f4b646, #f19739, #eb7734, #e25536, #d52d3b);
+  
+  }
+}
